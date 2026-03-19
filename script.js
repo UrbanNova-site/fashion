@@ -18,7 +18,7 @@ const content = {
     formTitle: "المرجو ملئ الاسثمارة أدناه 👇",
     orderProductNote: "سوف تقوم بطلب 1 منتج: الحقيبة الذكية للحماية من السرقة",
     wa: "تواصل معنا عبر الواتساب",
-    success: "🚚 تم تأكيد طلبكم بنجاح، وسوف تتوصلون بالطلب في أقرب الآجال.",
+    success: "✅ تم أخذ طلبكم بعين الاعتبار، وسوف تتوصلون بطلبكم في أقرب وقت ممكن.",
     fail: "تعذر إرسال الطلب، حاول مرة أخرى",
     promoLead: "🔥 عرض خاص لمدة 4 أيام:",
     promoOldPriceTop: "200dh",
@@ -341,7 +341,7 @@ orderForm.addEventListener("submit", async (e) => {
   };
 
   try {
-    const res = await fetch("https://script.google.com/macros/s/AKfycbyVYNB1Kb_q9jHRDSDVTFC3VYoy520hnwddzMF-80AUL6OA_mG7kq6iuMq29JTG4X8X1Q/exec", {
+    const res = await fetch("https://script.google.com/macros/s/AKfycbz_6ufrcnOldC6RAXkRvPtf0FgYE30VHl2khl1XRIbGueA_fv6oSndwzIh-6oDZzXc2/exec", {
       method: "POST",
       mode: "no-cors",
       headers: { "Content-Type": "application/json" },
