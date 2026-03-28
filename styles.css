@@ -17,12 +17,20 @@
 
 * { box-sizing: border-box; }
 
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 70px;
+  -webkit-overflow-scrolling: touch;
+}
+
 html, body {
   margin: 0;
   padding: 0;
   font-family: "Tajawal", Arial, sans-serif;
   color: var(--text);
   background:
+    linear-gradient(rgba(12, 21, 42, 0.72), rgba(12, 21, 42, 0.72)),
+    url("assets/bg/17973908.jpg") center/cover fixed no-repeat,
     radial-gradient(1200px 400px at 80% -10%, rgba(91, 61, 245, 0.12), transparent 60%),
     radial-gradient(900px 350px at 10% -10%, rgba(0, 179, 255, 0.12), transparent 60%),
     var(--bg);
@@ -108,6 +116,7 @@ html, body {
 
 .page {
   width: 100%;
+  padding-bottom: 20px;
 }
 
 .promo-strip,
@@ -198,7 +207,8 @@ html, body {
   margin: 0 0 8px;
   font-size: 19px;
   font-weight: 800;
-  color: #2c3f66;
+  color: #f8fbff;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.45);
 }
 
 .countdown-timer {
@@ -217,6 +227,25 @@ html, body {
   margin-top: 18px;
   padding-top: 6px;
   padding-bottom: 34px;
+}
+
+.special-offer-banner {
+  max-width: 1180px;
+  margin: 14px auto 0;
+  padding: 0 16px;
+}
+
+.special-offer-banner p {
+  margin: 0;
+  background: linear-gradient(110deg, #7a1f1f 0%, #be2a2a 45%, #f85e3f 100%);
+  color: #fff;
+  border: 2px solid #ffd9a0;
+  border-radius: 16px;
+  padding: 16px 18px;
+  text-align: center;
+  font-size: clamp(19px, 3.2vw, 30px);
+  font-weight: 800;
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.28);
 }
 
 .product-grid {
@@ -466,6 +495,37 @@ h1 {
   margin: 6px 0 0;
   font-size: 14px;
   text-align: center;
+}
+
+.loading-state {
+  margin-top: 10px;
+  padding: 11px 12px;
+  border-radius: 10px;
+  background: #e0f2fe;
+  border: 1px solid #38bdf8;
+  color: #0c4a6e;
+  text-align: center;
+  font-weight: 800;
+}
+
+.loader {
+  width: 30px;
+  height: 30px;
+  border: 3px solid rgba(2, 132, 199, 0.25);
+  border-top-color: #0284c7;
+  border-radius: 50%;
+  margin: 0 auto 8px;
+  animation: spin 0.8s linear infinite;
+}
+
+#loadingText {
+  margin: 0;
+  font-size: 15px;
+  line-height: 1.7;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
 }
 
 .success-banner {
