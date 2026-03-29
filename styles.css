@@ -186,16 +186,25 @@ html, body {
   border-radius: 18px 18px 0 0;
 }
 
-.shipping-logos {
+.shipping-features {
   background: linear-gradient(90deg, #111c39, #243f8c 45%, #2957d7);
   color: #fff;
   border-radius: 0 0 18px 18px;
-  padding: 6px 16px 16px;
-  display: flex;
-  justify-content: center;
-  gap: 18px;
-  font-size: 34px;
+  padding: 10px 12px 14px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
   box-shadow: var(--shadow-md);
+}
+
+.shipping-feature {
+  background: rgba(255, 255, 255, 0.14);
+  border: 1px solid rgba(255, 255, 255, 0.28);
+  border-radius: 10px;
+  padding: 8px 10px;
+  text-align: center;
+  font-weight: 800;
+  font-size: 15px;
 }
 
 .countdown-wrap {
@@ -331,6 +340,92 @@ h1 {
   margin-bottom: 16px;
 }
 
+.trust-strip {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+  margin: 0 0 12px;
+}
+
+.trust-item {
+  background: #fff;
+  border: 1px solid #dbe5f4;
+  border-radius: 10px;
+  padding: 10px 8px;
+  text-align: center;
+  font-weight: 800;
+  font-size: 14px;
+  color: #233352;
+}
+
+.social-proof {
+  margin: 0 0 14px;
+  background: #ffffff;
+  border: 1px solid #dbe5f4;
+  border-radius: 14px;
+  padding: 12px;
+}
+
+.social-proof-title {
+  margin: 0 0 10px;
+  text-align: center;
+  font-size: 20px;
+  color: #1f2f4f;
+  font-weight: 800;
+}
+
+.social-proof-grid {
+  display: grid;
+  gap: 8px;
+}
+
+.social-card {
+  background: #f8fbff;
+  border: 1px solid #d8e7ff;
+  border-radius: 10px;
+  padding: 10px;
+  color: #1f2f4f;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.social-avatar {
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #c7dcff;
+}
+
+.social-body {
+  flex: 1;
+}
+
+.social-name {
+  margin: 0 0 2px;
+  font-size: 15px;
+  font-weight: 800;
+}
+
+.social-stars {
+  margin: 0 0 4px;
+  color: #ffb020;
+  font-weight: 800;
+  letter-spacing: 1px;
+}
+
+.social-text {
+  margin: 0;
+  font-weight: 700;
+}
+
+.social-sold {
+  background: linear-gradient(120deg, #fff0d8, #ffe2b5);
+  border-color: #ffc169;
+  font-weight: 800;
+}
+
 .form-title {
   margin: 0 0 10px;
   text-align: center;
@@ -464,9 +559,13 @@ h1 {
 
 .buy-btn {
   color: #fff;
-  background: linear-gradient(120deg, #ff4d8d, #ff7a59);
-  margin: 0 0 10px;
-  box-shadow: 0 12px 24px rgba(255, 77, 141, 0.32);
+  background: linear-gradient(120deg, #ff2d55, #ff6a00);
+  margin: 0 0 12px;
+  min-height: 64px;
+  font-size: clamp(20px, 2.6vw, 28px);
+  letter-spacing: 0.2px;
+  border: 2px solid rgba(255, 255, 255, 0.6);
+  box-shadow: 0 18px 34px rgba(255, 80, 35, 0.45);
   animation: buyBtnPulse 0.9s infinite;
 }
 
@@ -616,6 +715,15 @@ h1 {
     gap: 18px;
   }
 
+  .trust-strip {
+    grid-template-columns: 1fr;
+  }
+
+  .buy-btn {
+    min-height: 60px;
+    font-size: clamp(18px, 5vw, 24px);
+  }
+
   .media-col,
   .info-col {
     padding: 14px;
@@ -627,10 +735,8 @@ h1 {
     padding: 14px 10px 8px;
   }
 
-  .shipping-logos {
-    font-size: 28px;
-    gap: 10px;
-    padding-bottom: 12px;
+  .shipping-features {
+    grid-template-columns: 1fr;
   }
 
   .description {
