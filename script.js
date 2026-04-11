@@ -7,14 +7,14 @@ const content = {
   ar: {
     pageTitle: "الحقيبة الذكية للحماية من السرقة – Lilia",
     announce: [
-      "🔥 عرض خاص: من 200dh إلى 149dh لمدة 4 أيام",
+      "🔥 عرض خاص: من 200dh إلى 139dh لمدة 4 أيام",
       "توصيل مجاني على جميع المنتجات",
       "إرجاع السلع حتى بعد 7 أيام"
     ],
     title: "حقيبة ذكية مضادة للسرقة + USB للشحن – جودة عالية 🔥",
-    price: "149 درهم",
+    price: "139 درهم",
     badge: "عرض خاص",
-    buy: "اشتري الآن - 149 درهم",
+    buy: "اشتري الآن - 139 درهم",
     formTitle: "المرجو ملئ الاسثمارة أدناه 👇",
     orderProductNote: "سوف تقوم بطلب 1 منتج: الحقيبة الذكية للحماية من السرقة",
     wa: "تواصل معنا عبر الواتساب",
@@ -22,7 +22,7 @@ const content = {
     fail: "تعذر إرسال الطلب، حاول مرة أخرى",
     promoLead: "🔥 عرض خاص لمدة 4 أيام:",
     promoOldPriceTop: "200dh",
-    promoNewPriceTop: "149dh",
+    promoNewPriceTop: "139dh",
     promoOldPriceInline: "200 درهم",
     promoNote: "ينتهي العرض خلال 4 أيام",
     countdownTitle: "⏳ الوقت المتبقي على نهاية العرض:",
@@ -54,14 +54,14 @@ const content = {
   fr: {
     pageTitle: "Sac intelligent anti-vol – Lilia",
     announce: [
-      "🔥 Offre spéciale : de 200dh à 149dh pendant 4 jours",
+      "🔥 Offre spéciale : de 200dh à 139dh pendant 4 jours",
       "Livraison gratuite sur tous les produits",
       "Retour des articles sous 7 jours"
     ],
     title: "Sac intelligent anti-vol",
-    price: "149 MAD",
+    price: "139 MAD",
     badge: "Offre spéciale",
-    buy: "Acheter maintenant - 149 MAD",
+    buy: "Acheter maintenant - 139 MAD",
     formTitle: "Veuillez remplir le formulaire ci-dessous 👇",
     orderProductNote: "Vous commandez 1 produit : Sac intelligent anti-vol",
     wa: "Contactez-nous sur WhatsApp",
@@ -69,7 +69,7 @@ const content = {
     fail: "Échec d’envoi, veuillez réessayer",
     promoLead: "🔥 Offre spéciale pendant 4 jours :",
     promoOldPriceTop: "200dh",
-    promoNewPriceTop: "149dh",
+    promoNewPriceTop: "139dh",
     promoOldPriceInline: "200 MAD",
     promoNote: "L’offre se termine dans 4 jours",
     countdownTitle: "⏳ Temps restant avant la fin de l’offre :",
